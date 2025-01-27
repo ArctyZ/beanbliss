@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.underlineHover{
+  position: relative;
+}
+
+.underlineHover::after {
+  content: "";
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0%;
+  background-color: black;
+  transition-property: width;
+  transition-duration: .2s;
+}
+
+.underlineHover:hover:after {
+  width: 100%;
+}
+
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
