@@ -38,6 +38,7 @@ model Product {
   intensity Int
   weight Int
   cups Int
+  createdAt DateTime @default(now())
 }
 
 
@@ -52,5 +53,5 @@ enum categoryTypes{
   wholeBean
   groundBean
   coffeePod
-  coffeBag
+  coffeeBag
 }
