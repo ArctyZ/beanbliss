@@ -28,9 +28,9 @@ export default function ProductCard({name, price, weight, image, intensity, cate
         </CardHeader>
         <CardContent>
             <div className="flex flex-col gap-2">
-                <p className=" border-b-[1px] border-primary text-sm">Type: {category}</p>
-                <p className=" border-b-[1px] border-primary text-sm">Weight: {weight}g</p>
-                <p className=" border-b-[1px] border-primary flex justify-between items-center text-sm">Strength {intensity}/10<span className="grid grid-cols-5">{Array.from({length: intensity}, (_, i) => {
+                <p className=" border-b-[1px] py-2 border-primary text-sm flex justify-between"><span className="font-semibold">Type:</span> {category}</p>
+                <p className=" border-b-[1px] py-2 border-primary text-sm flex justify-between"><span className="font-semibold">Weight:</span> {weight}g</p>
+                <p className=" border-b-[1px] py-2 border-primary flex justify-between items-center text-sm"><span className="font-semibold">Strength {intensity}/10</span> <span className="grid grid-cols-5">{Array.from({length: intensity}, (_, i) => {
                     return <Star key={i} size={12} className="text-primary" />
                 })}</span></p>
             </div>

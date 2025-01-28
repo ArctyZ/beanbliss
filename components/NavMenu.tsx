@@ -11,7 +11,7 @@ export const links: {name: string, link: string}[] = [
     },
     {
         name: 'Shop',
-        link: '#'
+        link: '/shop'
     },
     {
         name: 'About',
