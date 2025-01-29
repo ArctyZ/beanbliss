@@ -24,6 +24,10 @@
   width: 100%;
 }
 
+.hoverLink:hover .hoverObj{
+  border-color: hsl( 142.1 76.2% 36.3%);
+}
+
 
 
 @layer base {

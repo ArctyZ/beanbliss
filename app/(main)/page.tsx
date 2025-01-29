@@ -1,6 +1,7 @@
 import CoffeeCategory from "@/components/CoffeeCategory";
 import Hero from "@/components/Hero";
 import ProductsRow from "@/components/ProductsRow";
+import ReviewRow from "@/components/ReviewRow";
 
 
 
@@ -15,6 +16,7 @@ export default function Home() {
         <CoffeeCategory/>
         </div>
         <ProductsRow/>
+        <ReviewRow/>
       </div>
     </div>
   );

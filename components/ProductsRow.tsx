@@ -9,10 +9,10 @@ export default function ProductsRow() {
       <div className="flex w-full items-center justify-between mb-4">
         <h1 className="text-4xl font-semibold tracking-tight">Best Sellers</h1>
         <Link
-          className="flex items-center gap-3 text-xl tracking-tight"
+          className="flex items-center gap-3 text-xl tracking-tight hoverLink"
           href={"/shop"}
         >
-          Shop All <MoveRight className="rounded-full border-2 p-2" size={40} />
+          Shop All <MoveRight className="rounded-full border-2 p-2 hoverObj" size={40} />
         </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-items-center items-center">

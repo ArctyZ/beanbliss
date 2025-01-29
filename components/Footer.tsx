@@ -49,7 +49,7 @@ export default function Footer() {
             <h3 className="font-bold text-xl text-white">Menu</h3>
             <div className="flex flex-col gap-2 text-muted-foreground">
                 {links.map((l, i) => {
-                    return <Link key={i} href={l.link}>{l.name}</Link>
+                    return <Link className="hover:text-primary" key={i} href={l.link}>{l.name}</Link>
                 })}
             </div>
         </div>
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center w-full mt-5 text-white">
-        <p>Copyright &copy; 2024 Beanbliss - All Right Reserved</p>
+        <p className="pb-5">Copyright &copy; 2024 Beanbliss - All Right Reserved</p>
       </div>
     </footer>
   );
