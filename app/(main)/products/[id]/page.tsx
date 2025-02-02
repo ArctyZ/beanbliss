@@ -1,3 +1,4 @@
+import AdditionalDetails from "@/components/AdditionalDetails"
 import AdditionalInfo from "@/components/AdditionalInfo"
 import { Button } from "@/components/ui/button"
 import { products } from "@/lib/testProduct"
@@ -52,6 +53,9 @@ export default function page() {
 
     <div>
       <AdditionalInfo/>
+    </div>
+    <div>
+      <AdditionalDetails/>
     </div>
     </div>
   )
